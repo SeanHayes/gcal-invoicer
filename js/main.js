@@ -66,13 +66,13 @@ function processEvents(events, timeMin, timeMax){
 		var start = moment(el.start.dateTime),
 		    end   = moment(el.end.dateTime);
 		
-		if (end.unix() <= timeMin.unix() || start.unix() >= timeMax.unix()){
+		if (end <= timeMin || start >= timeMax){
 			return;
 		}
-		if (start.unix() < timeMin.unix()){
+		if (start < timeMin){
 			start = timeMin;
 		}
-		if (end.unix() >= timeMax.unix()){
+		if (end >= timeMax){
 			end = timeMax;
 		}
 		
@@ -237,6 +237,8 @@ function getCalendarEvents(calendarId){
 		    totalTime = invoice.totalTime,
 		    total = invoice.total,
 		    totalCheck = invoice.totalCheck;
+		
+		console.debug(days);
 		
 		if(total != totalCheck){
 			alert(total + ' != ' + totalCheck);
