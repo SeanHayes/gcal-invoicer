@@ -89,7 +89,6 @@ function processEvents(events, timeMin, timeMax){
 				start = moment(start).startOf('day').add('days', 1); //start of next day
 				
 				curRange.end = start;
-				
 			}
 			else{
 				curRange.end = end;
@@ -123,7 +122,11 @@ function processEvents(events, timeMin, timeMax){
 			});
 			
 			if (prevBlock && range.start <= prevBlock.end){
-				prevBlock.end = range.end;
+				// extend block to encompass range if necessary
+				if(prevBlock.end < range.end){
+					prevBlock.end = range.end;
+				}
+				
 				prevBlock.ids.push(range.id);
 				$.extend(prevBlock.titles, titles);
 			}
@@ -167,6 +170,7 @@ function makeInvoice(days){
 		
 		lineDuration = moment.duration(0);
 		
+		console.debug(durations);
 		$.each(durations, function(idx, duration){
 			lineDuration.add(duration);
 		});

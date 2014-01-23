@@ -308,6 +308,66 @@ var testEventResponses = [
      "reminders": {
       "useDefault": true
      }
+    },
+    {
+     "kind": "calendar#event",
+     "etag": "\"0MAR7UdiMyUNDlceNGt_2sHPXk4/MTM4NTg3NjE5MjUzMzAwMA\"",
+     "id": "3dvq4n8a5e1981mvvern95l00s",
+     "status": "confirmed",
+     "htmlLink": "https://www.google.com/calendar/event?eid=M2R2cTRuOGE1ZTE5ODFtdnZlcm45NWwwMHMgc2trbXEwZ2JqbGo2NWNvaHI5aTg0aTllMmtAZw",
+     "created": "2013-12-01T05:36:32.000Z",
+     "updated": "2013-12-01T05:36:32.533Z",
+     "summary": "full day of work",
+     "creator": {
+      "email": "gasphynx@gmail.com",
+      "displayName": "Seán Hayes"
+     },
+     "organizer": {
+      "email": "skkmq0gbjlj65cohr9i84i9e2k@group.calendar.google.com",
+      "displayName": "Ving",
+      "self": true
+     },
+     "start": {
+      "dateTime": "2013-10-17T15:00:00-04:00"
+     },
+     "end": {
+      "dateTime": "2013-10-17T17:30:00-04:00"
+     },
+     "iCalUID": "3dvq4n8a5e1981mvvern95l00s@google.com",
+     "sequence": 0,
+     "reminders": {
+      "useDefault": true
+     }
+    },
+    {
+     "kind": "calendar#event",
+     "etag": "\"0MAR7UdiMyUNDlceNGt_2sHPXk4/MTM4NTg3NjE5MjUzMzAwMA\"",
+     "id": "3dvq4n8a5e1981mvvern95l00s",
+     "status": "confirmed",
+     "htmlLink": "https://www.google.com/calendar/event?eid=M2R2cTRuOGE1ZTE5ODFtdnZlcm45NWwwMHMgc2trbXEwZ2JqbGo2NWNvaHI5aTg0aTllMmtAZw",
+     "created": "2013-12-01T05:36:32.000Z",
+     "updated": "2013-12-01T05:36:32.533Z",
+     "summary": "meeting",
+     "creator": {
+      "email": "gasphynx@gmail.com",
+      "displayName": "Seán Hayes"
+     },
+     "organizer": {
+      "email": "skkmq0gbjlj65cohr9i84i9e2k@group.calendar.google.com",
+      "displayName": "Ving",
+      "self": true
+     },
+     "start": {
+      "dateTime": "2013-10-17T15:30:00-04:00"
+     },
+     "end": {
+      "dateTime": "2013-10-17T16:00:00-04:00"
+     },
+     "iCalUID": "3dvq4n8a5e1981mvvern95l00s@google.com",
+     "sequence": 0,
+     "reminders": {
+      "useDefault": true
+     }
     }
    ]
  }
